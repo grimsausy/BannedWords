@@ -1,5 +1,5 @@
 $path = "E:\Projects\BannedWords\en"
-$files = get-childitem "$path\" -Filter *.csv
+$files = get-childitem "$path\bin\" -Filter *.csv
 $excludeCsv = Import-Csv "$path\cfg\WordsToExclude.csv"
 
 Remove-Item "$path\Output\Master.csv"
